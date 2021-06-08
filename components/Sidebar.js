@@ -13,15 +13,12 @@ const Sidebar = () => {
         </div>
 
         <nav className="mt-5 list-none">
-          <li
-            className={
-              router.pathname === "/dentista" ? "bg-blue-800 p-3" : "p-3"
-            }
-          >
-            <Link href="/dentista">
-              <a className="text-white mb-2 block text-2xl">Dentista</a>
+          <li className={router.pathname === "/" ? "bg-blue-800 p-3" : "p-3"}>
+            <Link href="/">
+              <a className="text-white mb-2 block text-2xl">Citas</a>
             </Link>
           </li>
+
           <li
             className={
               router.pathname === "/pacientes" ? "bg-blue-800 p-3" : "p-3"
@@ -31,22 +28,18 @@ const Sidebar = () => {
               <a className="text-white mb-2 block text-2xl">Pacientes</a>
             </Link>
           </li>
-          <li
-            className={router.pathname === "/citas" ? "bg-blue-800 p-3" : "p-3"}
-          >
-            <Link href="/citas">
-              <a className="text-white mb-2 block text-2xl">Citas</a>
-            </Link>
-          </li>
-          <li className={router.pathname === "/" ? "bg-blue-800 p-3" : "p-3"}>
-            <Link href="/">
-              <a className="text-white mb-2 block text-2xl">Index</a>
-            </Link>
-          </li>
         </nav>
       </aside>
     </>
   );
 };
-
+/*<li
+            className={
+              router.pathname === "/dentista" ? "bg-blue-800 p-3" : "p-3"
+            }
+          >
+            <Link href="/dentista">
+              <a className="text-white mb-2 block text-2xl">Dentista</a>
+            </Link>
+          </li>*/
 export default Sidebar;
