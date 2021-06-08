@@ -6,7 +6,6 @@ const httpLink = createHttpLink({
   uri: "https://shrouded-journey-58522.herokuapp.com",
   fetch,
 });
-console.log("Trolleado");
 
 const authLink = setContext((_, { headers }) => {
   const token = localStorage.getItem("token");
